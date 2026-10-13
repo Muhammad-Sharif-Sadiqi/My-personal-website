@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en"  class=" ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Sharif Sadiqi Portfolio</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="output.css">
+  
+  <style>
+ @keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleUp{
+  0% {opacity:0; transform: scale(0.5); }
+  100% {opacity:1; transform: scale(1); }
+}
+
+@keyframes slideInRight {
+  0% {opacity: 0; transform: translateX(100px); }
+  100% {opacity: 1; transform: translateX(0);}
+} 
+
+  </style>
+
+
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-white transition-colors duration-300">
+
+  <!-- NAVBAR -->
+
+     <a name="home"></a>
+     
+    <section class="dark:bg-gray-900 dark:text-white">
+
+   <header class="navbar w-full fixed top-0 z-50 ">
+
+   <div class="w-full flex justify-between items-center p-5 px-10 gap-2 bg-gray-800 text-white ">
+
+    <h1 class="font-bold text-2xl whitespace-nowrap ">Muhammad Sharif Sadiqi</h1>
+      
+      <!-- Desktop Menu -->
+      <nav class="ml-auto">
+        <ul class="hidden md:flex gap-2 lg:gap-4 xl:gap-5 text-sm lg:text-4xl xl:text-3xl whitespace-nowrap">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+           <li><a href="#services">Services</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#AboutMe">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+         
+        </ul>
+      </nav>
+
+       <button
+        onclick="toggleDarkMode()"
+        id="desktopThemeBtn"
+        class="px-3 py-2 rounded-lg bg-gray-200 text-gray-800 whitespace-nowrap">
+        🌙 Dark
+      </button>
+      
+      
+
+      <!-- Mobile Menu Button -->
+      <button onclick="toggleMenu()" <button onclick="toggleMenu()" class="md:hidden ml-auto bg-green-700 px-4 py-2 rounded-full border-2 border-gray-200">
+          ☰
+      </button>
+
+    </div>
+
+    
+  </header>
+
+  </section>
+
+  <!-- MOBILE SIDEBAR -->
+   <section>
+
+  <aside id="mobileMenu" class="fixed top-0 right-0 h-screen w-full  bg-white dark:bg-gray-900 backdrop-blur-sm shadow-xl z-50 transform translate-x-full transition-transform duration-300 md:hidden ">
+    <div class="p-5 relative">
+
+      <button onclick="toggleMenu()" class="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded">
+        ✕ Close
+      </button>
+
+      <h2 class="font-bold text-2xl mb-8 text-black">Muhammad Sharif Sadiqi</h2>
+
+      <nav>
+        <ul class="flex flex-col gap-6 text-xl font-bold text-black">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+           <li><a href="#services">Services</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#AboutMe">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+     <button 
+          onclick="toggleDarkMode()"
+          id="mobileThemeBtn"
+           class="px-4 py-2 w-5 rounded-lg bg-gray-200 text-gray-white hover:bg-gray-200 transition">
+           🌙 Dark
+          </button>
+
+  </aside>
+
+  </section>
+
+  <!-- NAMES SECTION -->
+
+  <section id="home" class="flex items-center justify-center p-5 gap-6 py-10 dark:bg-gray-900  dark:text-white">
+    <!-- Text Section -->
+
+    <div class="flex flex-col items-center text-center space-y-4 w-[50%] min-w-[200px] mt-3 md:-mt-70">
+
+      <h1 class="font-bold text-green-500 text-[24px] sm:text-[36px] md:text-[60px] lg:text-[96px] animate-[fadeInDown_1.5s_ease-in-out]">WELCOME</h1>
+      <h2 class="font-bold text-[18px] sm:text-[24px] md:text-[36px] lg:text-[48px] animate-[scaleUp_1.5s_ease-in-out]">My Name is</h2>
+      <h2 class="font-bold text-gray-900 dark:text-white text-[18px] sm:text-[24px] md:text-[36px] lg:text-[48px] animate-[slideInRight_1.5s_ease-in-out]">Muhammad Sharif</h2>
+      <h2 class="font-bold text-[18px] sm:text-[24px] md:text-[36px] lg:text-[48px] animate-[fadeInDown_1.5s_ease-in-out] ">Sadiqi</h2>
+
+    </div>
+
+    <!-- Image Section -->
+    <div class="w-[45%] min-w-[200px] h-auto mt-30  border-2 shadow-xl rounded-3xl transform transition duration-300 hover:scale-105">
+      <img src="Images/My_Fifth.jpg" alt="Profile photo of Muhammad Sharif Sadiqi" class="object-cover w-full h-auto brightness-75 rounded-3xl hover:brightness-100">
+    </div>
+  </section>
+
+  <a name="skills"></a>
+
+  <!--This section is depend to my skills -->
+
+  <section class="max-w-full mx-auto bg-white p-8 shadow-lg ps-10 pe-10 dark:bg-gray-900 dark:text-white ">
+
+  <h2 class="text-3xl font-bold text-black-400 text-center mb-8">
+    My Skills
+  </h2>
+
+  <!-- HTML -->
+  <div class="mb-5">
+    <div class="flex justify-between mb-2 text-black-400 text-sm">
+      <span>HTML</span>
+      <span>95%</span>
+    </div>
+    <div class="w-full h-3 bg-slate-700 rounded-full">
+      <div class="progress-bar h-3 w-0 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 transition-all duration-1000" data-width="95%"></div>
+    </div>
+  </div>
+
+  <!-- CSS -->
+  <div class="mb-5">
+    <div class="flex justify-between text-black-400 text-sm">
+      <span>CSS</span>
+      <span>90%</span>
+    </div>
+    <div class="w-full h-3 bg-slate-700 rounded-full">
+      <div class="progress-bar h-3 w-0 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 transition-all duration-1000" data-width="90%"></div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <div class="mb-5">
+    <div class="flex justify-between text-black-400 text-sm">
+      <span>JavaScript</span>
+      <span>85%</span>
+    </div>
+    <div class="w-full h-3 bg-slate-700 rounded-full">
+      <div class="progress-bar h-3 w-0 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 transition-all duration-1000" data-width="85%"></div>
+    </div>
+  </div>
+
+<!--TailwindCSS Skilll-->
+
+
+<div class="mb-5">
+  <div class="flex justify-between text-black-400 text-sm">
+    <span>TailwindCss</span>
+    <span>85%</span>
+  </div>
+
+  <div clss="w-full h-3 bg-slate rounded-full">
+    <div class="progress-bar h-3 w-0 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 transition-all duration-1000" data-width="85%"></div>
+  </div>
+        
+</div>
+
+  <!-- Bootstrap -->
+  <div class="mb-5">
+    <div class="flex justify-between text-black-400 text-sm">
+      <span>Bootstrap</span>
+      <span>85%</span>
+    </div>
+    <div class="w-full h-3 bg-slate-700 rounded-full">
+      <div class="progress-bar h-3 w-0 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 transition-all duration-1000" data-width="85%"></div>
+    </div>
+  </div>
+
+  <!-- Language Section -->
+  <h2 class="text-3xl font-bold text-black-400 text-center mb-8">
+    Language
+  </h2>
+
+  <!-- Pashto -->
+  <div class="mb-5">
+    <div class="flex justify-between text-black-400 text-sm">
+      <span>Pashto</span>
+      <span>100%</span>
+    </div>
+    <div class="w-full h-3 bg-slate-700 rounded-full">
+      <div class="progress-bar h-3 w-0 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 transition-all duration-1000" data-width="100%"></div>
+    </div>
+  </div>
+
+  <!-- Dari -->
+  <div class="mb-5">
+    <div class="flex justify-between text-black-400 text-sm">
+      <span>Dari</span>
+      <span>80%</span>
+    </div>
+    <div class="w-full h-3 bg-slate-700 rounded-full">
+      <div class="progress-bar h-3 w-0 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 transition-all duration-1000" data-width="80%"></div>
+    </div>
+  </div>
+
+  <!-- English -->
+  <div class="mb-5">
+    <div class="flex justify-between text-black-400 text-sm">
+      <span>English</span>
+      <span>60%</span>
+    </div>
+    <div class="w-full h-3 bg-slate-700 rounded-full">
+      <div class="progress-bar h-3 w-0 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 transition-all duration-1000" data-width="60%"></div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<a name="projects"></a>
+<!--This section is depend on My Projects Cards-->
+
+<section class="pt-5 dark:bg-gray-900  dark:text-white">
+
+          <!--Header div of Project -->
+
+        <div class="flex flex-col md:flex-row justify-center items-center p-5 text-center gap-2 ">
+
+    <h2 class="text-5xl md:text-[96px] text-black dark:text-white tracking-widest mb-0">
+    RECENT 
+  </h2>
+  <h2 class="text-5xl md:text-[96px] text-black dark:text-white tracking-widest mb-0">
+    PROJECT
+  </h2>
+
+    </div>
+
+  <!-- Projects Cards Container -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 justify-center">
+
+   <!--First Project Card-->
+
+     <div class="max-w-sm rounded-2xl bg-white dark:bg-gray-800 backdrop-blur-sm mx-auto border-2 border-gray-200  transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]">
+
+      <!-- Project Image -->
+      <img
+        src="Images/Bootstrap_project_screenshot.png"
+        alt="Project"
+        class="w-full h-64 object-cover rounded-2xl transition duration-700 group-hover:scale-110">
+             <!--Card Body-->
+
+          <div class="flex flex-col justify-center items-center p-5">
+
+      <!-- Project Title -->
+      <h3 class="text-2xl font-bold mb-3">
+        TechZone Computer Store Website 
+      </h3>
+
+      <!-- Project Description -->
+      <p class="text-gray-600 dark:text-gray-300 mb-5">
+        A modern and responsive computer store website showcasing Dell, HP, and Mac products
+         through interactive cards, sliders,
+       
+      </p>
+
+      <!-- View Project Button -->
+      <a href="My-pro\My bootstrap Project\My_project_practic.HTML" target="_blank">
+        <button class="px-5 py-2 mt-6 bg-green-700 justify-center text-black rounded-lg font-semibold brightness-75 transition-all duration-300 hover:brightness-100">
+          View Project
+        </button>
+      </a>
+      </div>
+    </div>
+
+    <!-- Second Project Card -->
+
+    <div class="max-w-sm rounded-2xl bg-white dark:bg-gray-800 backdrop-blur-sm mx-auto border-2 border-gray-200  transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]">
+
+      <!-- Project Image -->
+      <img
+        src="Images/TailwindCss_project_Screenshot.png"
+        alt="Project" target="_blank"
+        class="w-full h-70 object-cover rounded-2xl transition duration-700 group-hover:scale-110"
+      >
+          <!--Card body-->
+      <div class="flex flex-col justify-evenly items-center p-5 -mt-3">
+
+      <!-- Project Title -->
+      <h3 class="text-2xl font-bold mb-3">
+        Business Management Dashboard
+      </h3>
+
+      <!-- Project Description -->
+      <p class="text-gray-600 dark:text-gray-300 mb-5">
+       A responsive business dashboard built with HTML and Tailwind CSS. It includes user statistics, reports, search functionality, data tables,
+        and a mobile-friendly sidebar.
+      </p>
+
+      <!-- View Project Button -->
+      <a href="My-pro\My_TailwindCss_pro\second_Pro.html" target="_blank">
+        <button class="px-5 py-2 mt-3 bg-green-700 text-black rounded-lg font-semibold brightness-75 transition-all duration-300 hover:brightness-100">
+          View Project
+        </button>
+      </a>
+      </div>
+
+    </div>
+
+    <!-- Third Project Card -->
+
+    
+    <div class="max-w-sm rounded-2xl bg-white dark:bg-gray-800 backdrop-blur-sm mx-auto border-2 border-gray-200  transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]">
+
+      <!-- Project Image -->
+      <img
+        src="Images/School_project_Screenshot.png"
+        alt="Project"
+        class="w-full h-64 object-cover rounded-2xl transition duration-700 group-hover:scale-110"
+      >
+          <!--Card Body-->
+         <div class="flex flex-col justify-center items-center p-5">
+
+      <!-- Project Title -->
+      <h3 class="text-2xl font-bold mb-3">
+        Future School – Modern Education Platform
+      </h3>
+
+      <!-- Project Description -->
+      <p class="text-gray-600 dark:text-gray-300 mb-5">
+       A TailwindCSS project with modern design, showcasing courses, teachers, and school features in a clean responsive layout.
+      </p>
+
+      <!-- View Project Button -->
+      <a href="My-pro\Third_pro\24_project_Grid_10th_big - third_pr_Card.HTML" target="_blank">
+        <button class="px-5 py-2 mt-5 bg-green-700 text-black rounded-lg font-semibold brightness-75 transition-all duration-300 hover:brightness-100">
+          View Project
+        </button>
+      </a>
+
+   
+
+      </div>
+
+    </div>
+
+    
+
+  </div>
+
+</section>
+
+<a name="services"></a>
+
+<!--This section is depend on My sevice Card-->
+<section class="py-20 bg-gray-100 dark:bg-gray-900 ">
+  
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!--heaing Section-->
+    <div class="text-center mb-14">
+
+      <h2 class="text-4xl font-bold text-gray-800 dark:text-white">My Services</h2>
+      <p class="text-gray-600 dark:text-gray-300 text-2xl mt-3">Services I provide for Cliant and Business</p>
+
+    </div>
+
+            <!--Serices Cards parent-->
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+              <!-- 1 Serices Cards -->
+
+              <div class="bg-white dark:bg-gray-800 border border-gray-200 p-8 rounded-2xl shadow-lg hover:-translate-y-3 hover:shadow-2xl transition-all duration-300">
+
+                <div class="text-5xl mb-5"> 💻 </div>
+
+                  <h2 class="text-2xl font-semibold mb-3 dark:text-white">
+                      Web Development
+                  </h2>
+                  <p class="text-gray-600 dark:text-gray-300 mb-5">
+                      Building responsive and modern website using HTML ,CSS, Bootstrap , and TailwindCSS;.
+                  </p>
+
+              </div>
+
+               <!-- 2nd Serices Cards -->
+
+
+              <div class="bg-white dark:bg-gray-800 border border-gray-200 p-8 rounded-2xl shadow-lg hover:-translate-y-3 hover:shadow-2xl transition-all duration-300">
+
+                <div class="text-4xl mb-5">🎨</div>
+
+                <h2 class="text-3xl font-semibold mb-5 dark:text-white">UI /UX Design </h2>
+                <p class="text-gray-600 dark:text-gray-300 mb-5">Created Clean, Modern, user Friendly Website layouts with great user experiaces  </p>
+
+              </div>
+
+            <!--3rd Services Cards-->
+
+            <div class="bg-white dark:bg-gray-800 border border-gray-200 p-8 rounded-2xl shadow-lg hover:-translate-y-3 hover:shadow-2xl transition-all duration-300 ">
+
+              <div class="text-4xl mb-5 ">🚀</div>
+
+              <h2 class="text-3xl font-semibold mb-5 dark:text-white">Website Optimization</h2>
+
+              <p class="text-gray-600 dark:text-gray-300 mb-5">Improving Website Speed ,Performance and Responsiveness for better user satisfaction</p>
+            </div>
+
+              </div>
+
+  </div>
+
+</section>
+
+
+<a name="Education"></a>
+<!--This is all about My Education -->
+
+<section class="p-3 py-16 dark:bg-gray-900 dark:text-white">
+
+  <h2 class="text-5xl font-bold text-center mb-12">
+    Education
+  </h2>
+
+      <!--Edcation Cards Container-->
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 max-w-5xl mx-auto  items-stretch">
+
+        <!--First Education Cards-->
+
+        <div class="bg-white/10 backdrop-blur-lg border border-gray-200 rounded-2xl p-6 max-w-xs mx-auto my-5 h-72 transition-all duration-500 hover:scale-105 hover:shadow-xl">
+
+            <!--Education Icon-->
+            <div class="text-4xl mb-2">
+              🎓
+            </div>
+
+              <!--Degree Name-->
+              <h2 class="text-3xl font-bold mb-2 text-gray-900 dark:text-white"> 
+                 High School Gr
+              </h2>
+
+              <!--School Name-->
+              <p class="text-green-500 font-bold mb-2">
+                Kemia Private School
+              </p>
+
+              <!--Duration -->
+              <span class="text-blue-500 text-2xl">
+                2011 - 2023
+              </span>
+
+
+
+        </div>
+
+        <!--Second Education Cards-->
+
+        <div class="bg-white/10 backdrop-blur-lg border border-gray-200 rounded-2xl p-6 max-w-xs mx-auto my-5 h-72 transition-all duration-500 hover:scale-105 hover:shadow-xl">
+
+            <!--Education Icon-->
+          <div class="text-4xl mb-4">
+              🎓            
+          </div>
+
+          <!--Degree Name-->
+          <h2 class="text-3xl font-bold mb-2">
+            Fourth Semester
+          </h2>
+
+          <!--University Name-->
+          <p class="text-2xl text-green-500 mb-2">
+            Karwan University
+          </p>
+
+          <!--Duration-->
+          <span class="text-blue-600 text-2xl mb-2">
+            2024-2028
+          </span>
+
+        </div>
+
+
+               <!--Third Education Card-->
+
+        <div class="bg-white/10 backdrop-blur-lg border border-gray-200 rounded-2xl p-6 max-w-xs mx-auto my-5 h-72 transition-all duration-500 hover:scale-105 hover:shadow-xl">
+
+            <!--Education Icon-->
+              <div class="text-4xl mb-4">
+                 🎓
+              </div>
+
+              <!--Degree Name-->
+                  <h2 class="text-3xl font-bold mb-2 white-space-nowrep">
+                    Front End 
+                  </h2>
+
+                  <!--Course Name-->
+                  <p class="text-green-500 font-bold mb-2">
+                    Top Target
+                  </p>
+
+                  <!--Duration-->
+                  <span class="text-blue-500 text-2xl">
+
+                    2027/jun - 2027/jul
+
+                  </span>
+
+
+
+        </div>
+
+
+   
+       
+      </div>
+
+    
+
+</section>
+
+
+ <a name="AboutMe"></a>
+  <!--This is all About Me section -->
+
+    
+    <!-- About Me Section -->
+    
+<section class="py-5 px-6  dark:bg-gray-900 dark:text-white">
+
+  <!-- Main Container -->
+  <div class="max-w-6xl mx-auto">
+
+    <!-- Section Heading -->
+    <h2 class="text-4xl font-bold text-center mb-12 tracking-wider">
+      About Me
+    </h2>
+
+    <!-- Grid Layout: Image (left) + Content (right) -->
+    <div class="grid md:grid-cols-2 gap-10 items-center ">
+
+      <!-- Portfolio Image -->
+      <img
+        src="Images/My_Seventh.jpg"
+        alt="Portfolio Image"
+        class="w-full max-w-[350px] mx-auto object-cover rounded-3xl shadow-lg border border-gray-200 brightness-75 transition-all duration-300 hover:brightness-100 hover:scale-105"
+      >
+
+      <!-- About Content Card -->
+      <div class="bg-white/10 dark:bg-gray-800/30 backdrop-blur-lg border border-gray-200 dark:border-gray-700 shadow-lg rounded-xl p-8 transition-all duration-300 hover:scale-105">
+
+        <!-- Title -->
+        <h1 class="text-3xl font-bold mb-2">
+          About <span class="text-green-600">Me</span>
+        </h1>
+
+        <!-- Short Intro -->
+        <span class="text-2xl">
+          Muhammad Sharif Sadiqi — Fourth Semester Computer Science Faculty Student, Front End Developer
+        </span>
+
+        <!-- Detailed Description -->
+        <p class="text-gray-600 dark:text-gray-300 text-xl leading-relaxed mb-4">
+          I am Muhammad Sharif Sadiqi from Nama Ghazni, a second-year Computer Science student. 
+          I am a passionate Front End Web Developer who enjoys building responsive websites using 
+          HTML, CSS, Tailwind CSS, and JavaScript. My goal is to become a professional software 
+          developer and create useful digital solutions.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Resume Download Button -->
+    <div class="flex justify-start mt-10 ms-10 transition-all duraion-300 hover:scale-105">
+      <a href="M Sharif Sadiqi CV.docx" download>
+        <button class="px-8 py-4 text-2xl border-2 border-yellow-500 text-black dark:text-white text-center rounded-lg font-bold transition-all duration-300 hover:bg-green-700">
+          Download My Resume
+        </button>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<a name="contact"></a>
+
+<!--This section is depend on contact section -->
+
+<section class="p-5 px-4 md:px-8 lg:px-16  dark:bg-gray-900 dark:text-white">
+
+<!--Parent Container of three Contact Cards -->
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+
+    <!--First Cards or phone Number-->
+
+   <div class="flex flex-col h-50 w-full max-w-md bg-white dark:bg-gray-800 shadow-lg p-5 rounded-2xl transition-all duration-300 hover:scale-105">
+
+
+          <div class="flex flex-row items-center justify-start  gap-5 space-x-2">
+
+            <i class="fa-brands fa-whatsapp text-green-500 text-[80px]"></i>
+            
+            <div class="flex flex-col ">
+
+
+              <span class=" text-4xl mb-2">Phone</span>
+
+            <span >
+              0745588063
+            </span>
+            <span>
+               070845587
+            </span>
+
+            </div>
+
+          </div>
+    </div>
+
+      <!--Second Card or Gmail Cards-->
+
+       <div class="flex flex-col h-50 w-full max-w-md bg-white dark:bg-gray-800 shadow-lg p-5 rounded-2xl transition-all duration-300 hover:scale-105">
+
+          <div class="flex flex-row justify-center items-center gap-5 space-y-2 w-full">
+
+          <i class="text-[96px]  fa-solid fa-envelope text-green-500"></i>
+
+            <div>
+            <span class="text-3xl font-medium">Email</span>
+
+            <a href="mailto:mohammadshirefsiddiqi@gmail.com" <a class="text-blue-600 break-words hover:underline">
+              mohammadshirefsiddiqi@gmail.com
+            </a>
+
+            </div>
+
+          </div>
+
+    </div>
+
+
+      <!--Third Card or location Cards-->
+<div class="flex flex-col h-50 w-full max-w-md bg-white dark:bg-gray-800 shadow-lg p-5 rounded-2xl transition-all duration-300 hover:scale-105">
+
+          <div class="flex flex-row justify-center items-center mt-8 gap-5 space-y-2">
+
+            <a href="https://www.google.com/maps/@33.5226456,68.4223022,21z?entry=ttu&g_ep=EgoyMDI2MDYyMS4wIKXMDSoASAFQAw%3D%3Dhttps://www.google.com/maps/@33.5226456,68.4223022,21z?entry=ttu&g_ep=EgoyMDI2MDYyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+
+           <i class="fa-solid fa-location-dot text-blue-500 text-[80px]"></i>
+
+           </a>
+          
+            <div class="flex flex-col justify-center ">
+             <span class=" font-medium text-3xl">Address</span>
+
+            <div class="flex flex-row justify-center items-center gap-2 items-center">
+
+            <span class="text-xl">Afghanistan</span>
+            <span class="text-xl">Ghazni</span>
+            <span class="text-xl">pashtonAbad</span>
+
+            </div>
+
+            </div>
+
+          </div>
+
+       
+    </div>
+
+
+</div>
+
+</section >
+
+
+<!--This section is depend on Footer -->
+
+   <footer class="bg-white pt-15 text-black py-12 dark:bg-gray-900 dark:text-white ">
+
+    <!--Parent div of Footer element-->
+    <div class="flex flex-col  justify-center items-center max-w-6xl px-6 mx-auto">
+
+      <!--Name /logo-->
+      <div class="text-center mt-5 mb-7">
+        <h1 class="text-4xl font-bold mb-4">Muhammad Sharif Sadiqi</h1>
+        <p class="text-slate-400 mt-2 text-xl">Frontend developer passionate about creating modern Website</p>
+      </div>
+
+      <!--Quick Links-->
+
+      <div class="flex flex-wrap justify-center gap-3 mb-8">
+
+        <a href="#home" class="text-xl hover:text-blue-400 transition">Home</a>
+        <a href="#skill" class="text-xl hover:text-blue-400 transition">Skills</a>
+        <a href="#projects" class="text-xl hover:text-blue-400 transition">Projects</a>
+        <a href="#Education" class="text-xl hover:text-blue-400 transition">Education</a>
+        <a href="#AboutMe" class="text-xl hover:text-blue-400 transition">About</a>
+        <a href="#contact" class="text-xl hover:text-blue-400 transition">Contact</a>
+
+      </div>
+
+      <!--social Links-->
+
+      <div class="flex flex-row justify-center gap-15 mb-8">
+
+        <a href="#Github" class="text-xl hover:text-blue-400 transition-all  ">GitHub</a>
+        <a href="#LinkedIn" class="text-xl hover:text-blue-400 transition-all ">LikedIn</a>
+        <a href="#Facebook" class="text-xl hover:text-blue-400 transition-all">Facebook</a>
+        <a href="#Instagram" class="text-xl hover:text-blue-400 transition-all " >Instagram</a>
+
+      </div>
+
+      <!--Divider -->
+
+      <div class="border-t border-slate-700 pt-6 text-center">
+
+        <p class="text-slate-400">
+          © Mohammad sharif Sadiqi .All Right Reserved
+        </p>
+
+        <p class="text-slate-500 mt-5">
+          Made With ❤️ using  HTML , TailwindCSS & JavaScript
+        </p>
+
+
+      </div>
+
+
+
+
+
+      <div>
+
+      </div>
+
+    </div>
+
+
+   </footer>
+
+
+  <script src="personal_web.js"></script>
+
+</body>
+</html>
